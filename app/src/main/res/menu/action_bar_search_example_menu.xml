@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/filter"
+        android:icon="@drawable/filter_icon"
+        android:title="@string/filter"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/cancel_filter"
+        android:icon="@drawable/cancel_filter_icon"
+        android:title="@string/filter"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/app_bar_menu_search"
+        android:icon="@drawable/ic_search_action"
+        android:title="Search"
+        app:actionViewClass="android.support.v7.widget.SearchView"
+        app:showAsAction="always|collapseActionView" />
+
+    <item
+        android:id="@+id/list_activity"
+        android:icon="@drawable/list_icon"
+        android:title="@string/list"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/map_activity"
+        android:icon="@drawable/map_icon"
+        android:title="@string/map"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/app_bar_menu_share"
+        android:title="Share"
+        android:icon="@color/textWhiteColor"
+        app:showAsAction="never"
+        app:actionProviderClass="android.support.v7.widget.ShareActionProvider"/>
+</menu>

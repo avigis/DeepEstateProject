@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--<android.support.v7.widget.Toolbar-->
+        <!--android:id="@+id/assettoolbar"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="?attr/actionBarSize"-->
+        <!--android:background="@color/colorPrimaryDark"-->
+        <!--android:theme="@style/ThemeOverlay.AppCompat.ActionBar"-->
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--app:layout_constraintTop_toTopOf="parent"-->
+        <!--app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />-->
+    <include
+        layout="@layout/toolbar_layout"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" />
+
+
+    <TabHost
+        android:id="@+id/tabHost"
+        android:layout_width="match_parent"
+        android:layout_height="561dp"
+        android:layout_alignTop="@+id/assettoolbar"
+        android:layout_marginTop="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layoutDirection="rtl"
+            android:orientation="vertical">
+
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <RelativeLayout
+                    android:id="@+id/tab1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/lightGrayColor"
+                    android:orientation="vertical">
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:layoutDirection="rtl"-->
+                        <!--android:orientation="vertical">-->
+
+                        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:layout_width="match_parent"
+                            android:layout_height="617dp"
+                            android:layoutDirection="rtl"
+                            android:orientation="vertical">
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:id="@+id/imageView"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="184dp"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentTop="true"
+                                    android:scaleType="fitXY"
+                                    app:srcCompat="@drawable/default_asset_image" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="374dp"
+                                android:layout_height="191dp"
+                                android:layout_alignParentTop="true"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="186dp"
+                                android:background="@color/textWhiteColor">
+
+
+                                <LinearLayout
+                                    android:layout_width="170dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_marginStart="27dp"
+                                    android:layout_marginTop="18dp"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/textView10"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layoutDirection="rtl"
+                                        android:text="TextView"
+                                        android:textAlignment="viewStart"
+                                        android:textColor="@color/colorPrimaryDark"
+                                        android:textSize="20sp"
+                                        android:textStyle="bold" />
+
+
+                                    <TextView
+                                        android:id="@+id/textView11"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layoutDirection="rtl"
+                                        android:text="TextView"
+                                        android:textAlignment="viewStart"
+                                        android:textSize="16sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/textView12"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layoutDirection="rtl"
+                                        android:text="TextView"
+                                        android:textAlignment="viewStart"
+                                        android:textStyle="bold" />
+
+                                </LinearLayout>
+
+                                <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                    xmlns:tools="http://schemas.android.com/tools"
+                                    android:id="@+id/GridLayout1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="80dp"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_marginBottom="3dp"
+                                    android:columnCount="4"
+                                    android:orientation="horizontal"
+                                    android:rowCount="3"
+                                    tools:context=".GridXMLActivity">
+
+                                    <ImageView
+                                        android:id="@+id/imageView2"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_columnWeight="1"
+                                        android:layout_gravity="fill"
+                                        app:srcCompat="@drawable/parking_icon" />
+
+                                    <ImageView
+                                        android:id="@+id/imageView3"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_columnWeight="1"
+                                        android:layout_gravity="fill"
+                                        app:srcCompat="@drawable/floor_icon" />
+
+                                    <ImageView
+                                        android:id="@+id/imageView4"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_columnWeight="1"
+                                        android:layout_gravity="fill"
+                                        app:srcCompat="@drawable/surface_icon" />
+
+                                    <ImageView
+                                        android:id="@+id/imageView5"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_columnWeight="1"
+                                        android:layout_gravity="fill"
+                                        app:srcCompat="@drawable/rooms_icon" />
+
+                                    <TextView
+                                        android:id="@+id/textView43"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_columnWeight="1"
+                                        android:layout_gravity="fill"
+                                        android:layoutDirection="rtl"
+                                        android:text="TextView"
+                                        android:textAlignment="center" />
+
+                                    <TextView
+                                        android:id="@+id/textView44"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_columnWeight="1"
+                                        android:layout_gravity="fill"
+                                        android:layoutDirection="rtl"
+                                        android:text="TextView"
+                                        android:textAlignment="center" />
+
+                                    <TextView
+                                        android:id="@+id/textView45"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_columnWeight="1"
+                                        android:layout_gravity="fill"
+                                        android:layoutDirection="rtl"
+                                        android:text="TextView"
+                                        android:textAlignment="center" />
+
+                                    <TextView
+                                        android:id="@+id/textView46"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_columnWeight="1"
+                                        android:layout_gravity="fill"
+                                        android:layoutDirection="rtl"
+                                        android:text="TextView"
+                                        android:textAlignment="center" />
+
+                                    <TextView
+                                        android:id="@+id/textView82"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_columnWeight="1"
+                                        android:layout_gravity="fill"
+                                        android:text="חניות"
+                                        android:textAlignment="center"
+                                        android:textSize="16sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/textView81"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_columnWeight="1"
+                                        android:layout_gravity="fill"
+                                        android:text="קומה"
+                                        android:textAlignment="center"
+                                        android:textSize="16sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/textView80"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_columnWeight="1"
+                                        android:layout_gravity="fill"
+                                        android:text='מ"ר'
+                                        android:textAlignment="center"
+                                        android:textSize="16sp"
+                                        android:textStyle="bold" />
+
+
+                                    <TextView
+                                        android:id="@+id/textView79"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_columnWeight="1"
+                                        android:layout_gravity="fill"
+                                        android:text="חדרים"
+                                        android:textAlignment="center"
+                                        android:textSize="16sp"
+                                        android:textStyle="bold" />
+                                </GridLayout>
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="373dp"
+                                android:layout_height="230dp"
+                                android:layout_alignParentBottom="true"
+                                android:layout_centerHorizontal="true"
+                                android:background="@color/textWhiteColor"
+                                android:layoutDirection="rtl">
+
+                                <TextView
+                                    android:id="@+id/textView49"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_marginStart="25dp"
+                                    android:layout_marginTop="17dp"
+                                    android:text="תיאור"
+                                    android:textSize="24sp"
+                                    android:textStyle="bold" />
+
+                                <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                    xmlns:tools="http://schemas.android.com/tools"
+                                    android:id="@+id/GridLayout2"
+                                    android:layout_width="257dp"
+                                    android:layout_height="150dp"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginBottom="26dp"
+                                    android:columnCount="2"
+                                    android:orientation="horizontal"
+                                    android:rowCount="6"
+                                    tools:context=".GridXMLActivity">
+
+
+                                    <TextView
+                                        android:id="@+id/textView36"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_columnWeight="1"
+                                        android:layout_gravity="fill"
+                                        android:text="סוג נכס:"
+                                        android:textAlignment="textStart"
+                                        android:textSize="18sp"
+                                        android:textStyle="bold"
+                                        tools:ignore="RtlCompat" />
+
+                                    <TextView
+                                        android:id="@+id/textView72"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_columnWeight="1"
+                                        android:layout_gravity="fill"
+                                        android:text="TextView"
+                                        android:textAlignment="textStart"
+                                        android:textSize="18sp"
+                                        tools:ignore="RtlCompat" />
+
+
+                                    <TextView
+                                        android:id="@+id/textView19"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_columnWeight="1"
+                                        android:layout_gravity="fill"
+                                        android:text="קומה:"
+                                        android:textAlignment="textStart"
+                                        android:textSize="18sp"
+                                        android:textStyle="bold"
+                                        tools:ignore="RtlCompat" />
+
+                                    <TextView
+                                        android:id="@+id/textView73"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_columnWeight="1"
+                                        android:layout_gravity="fill"
+                                        android:layout_weight="1"
+                                        android:orientation="horizontal"
+                                        android:text="TextView"
+                                        android:textAlignment="textStart"
+                                        android:textSize="18sp"
+                                        tools:ignore="RtlCompat" />
+
+
+                                    <TextView
+                                        android:id="@+id/textView38"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_columnWeight="1"
+                                        android:layout_gravity="fill"
+                                        android:layout_weight="1"
+                                        android:text="חדרים:"
+                                        android:textAlignment="textStart"
+                                        android:textSize="18sp"
+                                        android:textStyle="bold"
+                                        tools:ignore="RtlCompat" />
+
+                                    <TextView
+                                        android:id="@+id/textView74"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_columnWeight="1"
+                                        android:layout_gravity="fill"
+                                        android:layout_weight="1"
+                                        android:text="TextView"
+                                        android:textAlignment="textStart"
+                                        android:textSize="18sp"
+                                        tools:ignore="RtlCompat" />
+
+
+                                    <TextView
+                                        android:id="@+id/textView39"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_columnWeight="1"
+                                        android:layout_gravity="fill"
+                                        android:layout_weight="1"
+                                        android:text="חניות:"
+                                        android:textAlignment="textStart"
+                                        android:textSize="18sp"
+                                        android:textStyle="bold"
+                                        tools:ignore="RtlCompat" />
+
+                                    <TextView
+                                        android:id="@+id/textView75"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_columnWeight="1"
+                                        android:layout_gravity="fill"
+                                        android:layout_weight="1"
+                                        android:text="TextView"
+                                        android:textAlignment="textStart"
+                                        android:textSize="18sp"
+                                        tools:ignore="RtlCompat" />
+
+
+                                    <TextView
+                                        android:id="@+id/textView48"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_columnWeight="1"
+                                        android:layout_gravity="fill"
+                                        android:layout_weight="1"
+                                        android:text='מ"ר:'
+                                        android:textAlignment="textStart"
+                                        android:textSize="18sp"
+                                        android:textStyle="bold"
+                                        tools:ignore="RtlCompat" />
+
+                                    <TextView
+                                        android:id="@+id/textView76"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_columnWeight="1"
+                                        android:layout_gravity="fill"
+                                        android:layout_weight="1"
+                                        android:text="TextView"
+                                        android:textAlignment="textStart"
+                                        android:textSize="18sp"
+                                        tools:ignore="RtlCompat" />
+
+
+                                    <TextView
+                                        android:id="@+id/textView50"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_columnWeight="1"
+                                        android:layout_gravity="fill"
+                                        android:layout_weight="1"
+                                        android:text="אמבטיות:"
+                                        android:textAlignment="textStart"
+                                        android:textSize="18sp"
+                                        android:textStyle="bold"
+                                        tools:ignore="RtlCompat" />
+
+                                    <TextView
+                                        android:id="@+id/textView77"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_columnWeight="1"
+                                        android:layout_gravity="fill"
+                                        android:layout_weight="1"
+                                        android:text="TextView"
+                                        android:textAlignment="textStart"
+                                        android:textSize="18sp"
+                                        tools:ignore="RtlCompat" />
+
+                                </GridLayout>
+
+                            </RelativeLayout>
+
+
+                        </RelativeLayout>
+                    </ScrollView>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/tab2"
+                    android:layout_width="match_parent"
+                    android:layout_height="617dp"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tab3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <com.jjoe64.graphview.GraphView
+                        android:id="@+id/graph"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+</RelativeLayout>
